@@ -1,9 +1,37 @@
 import React from 'react'
 
-const Sidebar = () => {
+import "./sidebar.scss"
+
+import aniket from "../../img/aniket.jpeg"
+import { SidebarLink } from './SidebarLink'
+import { Link } from 'react-router-dom'
+
+const Sidebar = (props) => {
     return (
-        <div>
-            hello
+        <div className="sidebar">
+            <div> <img src={aniket} className="profileImg" alt="" width="220px" /> </div>
+            <div className="seprator"></div>
+            <div className="allLinks">
+
+
+
+                {SidebarLink.map((props, key) => {
+                    return (
+                        <Link className="links" to={props.link}>
+                            <div className="links-list">
+                                <li className="list-img">{props.img}</li>
+                                <li className="list-name">{props.name}</li>
+                            </div>
+                        </Link>
+                    )
+                })}
+
+
+            </div>
+            <div className="seprator"></div>
+            <div className="copyright">
+                <h2>© Aniket Gholap</h2>
+            </div>
         </div>
     )
 }
