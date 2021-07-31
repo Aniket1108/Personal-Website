@@ -8,7 +8,7 @@ export const SidebarLink = [
     {
         img:<AiOutlineHome />,
         name:"HOME",
-        link:"/"
+        link:""
     },
     {
         img:<SiAboutDotMe />,

@@ -1,14 +1,22 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sidebar from "./components/Sidebar/Sidebar"
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import "./app.scss"
 import Home from './components/Home/Home';
+import About from "./components/about/About"
 
 
 function App() {
   return (
     <Router>
-      <Sidebar/>
+      <div className="mainPage">
+        <Sidebar />
+        <Switch>
+          
+        <Route path="" component={Home}/>
+        <Route path="/aboutme" component={About}/>
+        </Switch>
+      </div>
     </Router>
   );
 }
