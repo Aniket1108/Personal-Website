@@ -12,9 +12,9 @@ function App() {
       <div className="mainPage">
         <Sidebar />
         <Switch>
-          
-        <Route path="" component={Home}/>
-        <Route path="/aboutme" component={About}/>
+
+          <Route path="" component={Home} />
+          <Route path="/aboutme" component={About} />
         </Switch>
       </div>
     </Router>
