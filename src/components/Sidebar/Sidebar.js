@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = (props) => {
     return (
-        <div className="sidebar">
+        <div className="sidebar" id="Sidebar">
             <div> <img src={aniket} className="profileImg" alt="" width="220px" /> </div>
             <div className="seprator"></div>
             <div className="allLinks">

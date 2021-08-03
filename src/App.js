@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="mainPage">
-        <Sidebar />
+        <Sidebar /> 
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/aboutme" component={About} />
