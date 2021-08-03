@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar"
 import "./app.scss"
 import Home from './components/Home/Home';
 import About from "./components/about/About"
+import Portfolio from './components/Portfolio/Portfolio';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/aboutme" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
         </Switch>
       </div>
     </Router>

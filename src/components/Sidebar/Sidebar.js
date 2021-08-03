@@ -14,7 +14,6 @@ const Sidebar = (props) => {
             <div className="allLinks">
 
 
-
                 {SidebarLink.map((props, key) => {
                     return (
                         <Link className="links" to={props.link}>
