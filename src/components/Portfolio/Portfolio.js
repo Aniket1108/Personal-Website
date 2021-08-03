@@ -9,13 +9,13 @@ const Portfolio = () => {
     return (
         <Router>
 
-        <div className="Portfolio">
-            <HeaderPortfolio />
-            <Switch>
-                <Route path="/portfolio/projects" exact component={ProjectPortfolio} />
-                <Route path="/portfolio/basicprojects" component={BasicProjectPortfolio} />
-            </Switch>
-        </div>
+            <div className="Portfolio">
+                <HeaderPortfolio />
+                <Switch>
+                    <Route path="/portfolio/projects" component={ProjectPortfolio} />
+                    <Route path="/portfolio/basicprojects" component={BasicProjectPortfolio} />
+                </Switch>
+            </div>
         </Router>
     )
 }
