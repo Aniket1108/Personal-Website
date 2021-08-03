@@ -17,6 +17,7 @@ const About = () => {
                         <div className="data"><h4>Languages</h4><span>: Marathi, English, Hindi</span></div>
                         <div className="data"><h4>Loacation</h4><span>: Pune</span></div>
                     </div>
+                    <div className="seperator"></div>
                     <button className="resume">Download Resume</button>
                 </div>
             </div>

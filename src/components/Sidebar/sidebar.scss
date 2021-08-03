@@ -1,3 +1,4 @@
+
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -36,6 +37,10 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
+    #activeLink{
+        background-color: #0B122E;
+    }
+
     .links-list{
         display: flex;
         width: 100%;
