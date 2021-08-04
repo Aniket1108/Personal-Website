@@ -11,11 +11,14 @@ const ProjectPortfolio = () => {
                 {ProjectDetails.map((props, key) => {
                     return (
                         <div className="cardsData">
-
-
-
-
-
+                            <div className="image">{props.img}</div>
+                            <div className="img-overlay">
+                                <a href=""><AiFillGithub /></a>
+                                <div>
+                                    <h3>{props.name}</h3>
+                                    <p>{props.description}</p>
+                                </div>
+                            </div>
                         </div>
                     )
                 })}

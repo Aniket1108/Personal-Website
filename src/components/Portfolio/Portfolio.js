@@ -12,8 +12,10 @@ const Portfolio = () => {
             <div className="Portfolio">
                 <HeaderPortfolio />
                 <Switch>
+
                     <Route path="/portfolio/projects" component={ProjectPortfolio} />
                     <Route path="/portfolio/basicprojects" component={BasicProjectPortfolio} />
+                
                 </Switch>
             </div>
         </Router>

@@ -23,7 +23,7 @@ export const SidebarLink = [
     {
         img:<AiFillProject />,
         name:"PORTFOLIO",
-        link:"/portfolio"
+        link:"/portfolio/projects"
     },
     {
         img:<IoIosContact />,
