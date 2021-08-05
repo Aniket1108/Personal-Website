@@ -60,7 +60,28 @@
 
         border: none;
         border-radius: 5px;
+
+        .question{
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 25px;
+            font-size: 14px;            
         
+        }
+        
+    }
+    .downloadresume:hover{
+        color: blue;
+        transition: 0.5s;
+    }
+    .resume-section p{
+        background-color: #0B122E;
+        color: white;
+        opacity: 50%;
+        width: 250px;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5px;
     }
     .hobbies-skills{
         display: flex;

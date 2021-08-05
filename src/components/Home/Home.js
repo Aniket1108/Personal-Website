@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./home.scss"
 
 const About = () => {
+
+    const [showQue, setShowQue] = useState(false)
+
+    const toggleQue = () => {
+        return ( setShowQue (!showQue) )
+    }
+
     return (
         <div id="About">
             <div className="section">
-                <div className="heading">ABOUT ME</div>
+                <div className="heading">Hello....</div>
                 <div>
                     <h3 className="name">My name is <span>Aniket Ashok Gholap</span></h3>
                     <p className="description">I am a Mechanical Engineer Graduated from university of pune and having interest in the field of Web Design and Developing and have completed front end development libraries.</p>
@@ -18,7 +25,10 @@ const About = () => {
                         <div className="data"><h4>Loacation</h4><span>: Pune</span></div>
                     </div>
                     <div className="seperator"></div>
-                    <button className="resume">Download Resume</button>
+                    <div className="resume-section">
+                        <button className="resume"><div className="question" onClick={toggleQue}>?</div> <div className="downloadresume">Download Resume</div></button>
+                        {showQue && (<p className="msg" >Don't hesitate to download file, it doesn't contain virus.</p>)}
+                    </div>
                 </div>
                 <div className="hobbies-skills">
                     <div className="hobbies">
