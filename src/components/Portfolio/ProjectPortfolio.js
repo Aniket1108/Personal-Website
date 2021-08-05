@@ -13,7 +13,7 @@ const ProjectPortfolio = () => {
                         <div className="cardsData">
                             <div className="image">{props.img}</div>
                             <div className="img-overlay">
-                                <a href=""><AiFillGithub /></a>
+                                <a href={props.githublink} target="_blank" rel="noreferrer">{props.github == true ? <AiFillGithub /> : <></>}</a>
                                 <div>
                                     <h3>{props.name}</h3>
                                     <p>{props.description}</p>

@@ -1,26 +1,86 @@
-#Home{
+#About{
     margin-left: 350px;
-    width: 75%;
     height: 100vh;
+    width: 75%;
     background-color: #070B28;
     padding: 2% 5%;
+    
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-    padding-top: 15%;
-    text-align: end;
-
-    .name{
-        color: white;
-        font-size: 46px;
-        text-align: end;
-
-        h2{
-            font-size: 72px;
-        }
-
-    } 
-    p{
-        font-size: 26px;
+        height: 100%;
+    }
+        
+    .heading{
+        font: 400 52px Poppins;
         color: white;
     }
+    .name{
+        font: 400 46px Poppins;
+        color: white;
+    }
+    .name span{
+        color: blue;
+    }
+    .description{
+        font: 400 20px Poppins;
+        color: white;
+    }
+    .mydata{
+        display: flex;
+        justify-content: space-between;
+    }
+    .data{
+        display: flex;
+        font: 300 20px Poppins;
+        color: white;
+        margin-bottom: 5px;
 
+
+    }
+    .data h4{
+        width: 200px;
+
+    }
+    .seperator{
+        height: 100%;
+        width: 5px;
+        background-color: #0B122E;
+    }
+    .resume{
+
+        width: 300px;
+        height: 60px;
+
+        background-color: #0B122E;
+        font: 400 22px Poppins;
+        color: white;
+
+        border: none;
+        border-radius: 5px;
+        
+    }
+    .hobbies-skills{
+        display: flex;
+        justify-content: space-between;
+
+        .hobbies, .skills{
+            width: 50%  ;
+        }
+        
+        h2{
+            color: white;
+            margin-bottom: 15px;
+        }
+        p span{
+            background-color: #0B122E;
+            color: white;
+            font: 400 16px Poppins;
+            margin-left: 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }
 }
