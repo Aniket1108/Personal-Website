@@ -6,9 +6,9 @@ import aniket from "../../img/aniket.jpeg"
 import { SidebarLink } from './SidebarLink'
 import { Link } from 'react-router-dom'
 
-const Sidebar = (props) => {
+const Sidebar = ({show},  props) => {
     return (
-        <div className="sidebar" id="Sidebar">
+        <div className={show ? "sidebar active" : "sidebar"} id="Sidebar">
             <div> <img src={aniket} className="profileImg" alt="" width="220px" /> </div>
             <div className="seprator"></div>
             <div className="allLinks">

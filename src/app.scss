@@ -11,4 +11,34 @@
     // height: 100%;
     display: flex;
     background-color: #0B122E;
+
+
+    .sidebar-toggle{
+        display: none;
+        width: 40px;
+        height: 29px;
+
+        position: absolute;
+        right: 0;
+        margin-top: 25px;
+        margin-right: 50px;
+        background: transparent;       
+        border: none;
+        outline: none;
+
+        .toggle-bars{
+            margin-top: 5px;
+            height: 5px;
+            width: 100%;
+            background-color: red;
+            border-radius: 3px;
+        }
+    }
+    @media only screen and (max-width:1200px) {
+        .sidebar-toggle{
+            display: block;
+        }
+    }
+
+
 }

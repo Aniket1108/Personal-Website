@@ -5,11 +5,18 @@
     display: flex;
     flex-direction: column;
     background-color: #070B28;
-    width: 300px;
+    
     height: 100vh;
     margin: 0PX 25px;
     justify-content: space-between;
     align-items: center;
+
+
+    width: 300px;
+    
+    transition: all 01s;
+
+    
 
 
     .profileImg{
@@ -64,3 +71,17 @@
         color: white;
     }
 }
+
+@media only screen and (max-width:1200px){
+    .sidebar{
+        position: absolute;
+        left: -100%;
+        width: 300px;
+        z-index: 99;
+        
+    }    
+    .active{
+        left: 0;
+    }
+}
+

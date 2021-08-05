@@ -1,3 +1,4 @@
+import React, {useState} from "react"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sidebar from "./components/Sidebar/Sidebar"
 // import Navbar from './components/Navbar/Navbar';
@@ -9,10 +10,23 @@ import Resume from './components/Resume/Resume';
 
 
 function App() {
+
+
+  const [showSidebar, setShowSidebar] = useState(false)
+
+
   return (
     <Router>
       <div className="mainPage">
-        <Sidebar /> 
+        <button className="sidebar-toggle" onClick={() => setShowSidebar(!showSidebar)}>
+          <div className="toggle-bars"></div>
+          <div className="toggle-bars"></div>
+          <div className="toggle-bars"></div>
+        </button>
+        
+        <Sidebar show={showSidebar}/> 
+
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/resume" component={Resume} />
