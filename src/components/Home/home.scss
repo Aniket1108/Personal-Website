@@ -1,6 +1,7 @@
 #About{
     margin-left: 350px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
     width: 75%;
     background-color: #070B28;
     padding: 2% 5%;
@@ -60,6 +61,7 @@
 
         border: none;
         border-radius: 5px;
+        
 
         .question{
             position: absolute;
@@ -88,14 +90,18 @@
         justify-content: space-between;
 
         .hobbies, .skills{
-            width: 50%  ;
+            width: 45%  ;
         }
         
         h2{
             color: white;
             margin-bottom: 15px;
         }
-        p span{
+        .skillname{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        p{
             background-color: #0B122E;
             color: white;
             font: 400 16px Poppins;
@@ -110,5 +116,46 @@
     #About{
         margin: 0 25px;
         width: 100%;
+        transition: all 0.5s;
     }    
+}
+
+@media only screen and (max-width:1200px){
+    #About{
+        margin: 0;
+        .heading{
+            margin: 15px 0;
+            font-size: 40px;
+        }
+        .name{
+            font-size: 32px;
+            span{
+                font-size: 32px
+            }
+        }
+        .description{
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .mydata{
+            flex-direction: column;
+            h4{
+                width: 40%;
+            }
+            .seperator{
+                display: none;
+            }
+            .resume-section{
+                margin: 15px 0;
+            }
+        }
+        .data h4, span{
+            font-size: 16px;
+        }
+        .hobbies-skills{
+            flex-direction: column;
+            
+
+        }
+    }   
 }

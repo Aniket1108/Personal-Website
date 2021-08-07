@@ -5,7 +5,7 @@ import "./contact.scss"
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlineMobile } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai'; 
 import { AiOutlineInstagram } from 'react-icons/ai';
 
 const Contact = () => {

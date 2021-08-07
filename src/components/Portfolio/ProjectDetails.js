@@ -1,17 +1,21 @@
 import test from "../../img/test.png"
 import jobportal from "../../img/jobportal.PNG"
+import personalwebsite from "../../img/personalwebsite.png"
+import skillbandlanding from "../../img/skillbandlanding.png"
 
 export const ProjectDetails = [
     {
         name:"SkillBand",
-        description:"Landing page of skillband event",
-        github:"",
-        img:<img src={test} alt="skillband"/>
+        description:"Landing page of skillband event - Event date 08 Aug 2021",
+        github:false,
+        img:<img src={skillbandlanding} alt="skillband"/>
     },
     {
-        name:"SkillBand",
-        description:"Landing page of skillband event",
-        github:""
+        name:"Personal Website",
+        description:"personal website to show info and portfolio",
+        github:true,
+        githublink:"https://github.com/Aniket1108/Job-Portal",
+        img:<img src={personalwebsite} alt="job portal"/>
     },
     {
         name:"Job Portal",
@@ -19,25 +23,5 @@ export const ProjectDetails = [
         github:true,
         githublink:"https://github.com/Aniket1108/Job-Portal",
         img:<img src={jobportal} alt="job portal"/>
-    },
-    {
-        name:"SkillBand",
-        description:"Landing page of skillband event",
-        github:""
-    },
-    {
-        name:"SkillBand",
-        description:"Landing page of skillband event",
-        github:""
-    },
-    {
-        name:"SkillBand",
-        description:"Landing page of skillband event",
-        github:""
-    },
-    {
-        name:"SkillBand",
-        description:"Landing page of skillband event",
-        github:""
-    },
+    }
 ]

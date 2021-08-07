@@ -8,7 +8,7 @@ const About = () => {
     const toggleQue = () => {
         return ( setShowQue (!showQue) )
     }
-
+ 
     return (
         <div id="About">
             <div className="section">
@@ -31,13 +31,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className="hobbies-skills">
-                    <div className="hobbies">
-                        <h2>Hobbies</h2>
-                        <p><span>Video Games</span><span>Travelling</span><span>Bike Riding</span></p>
-                    </div>
                     <div className="skills">
                         <h2>Skills</h2>
-                        <p><span>HTML & CSS</span><span>Bootstrap</span><span>JavaScript</span><span>React JS</span></p>
+                        <div className="skillname"><p>HTML</p><p>CSS</p><p>Bootstrap</p><p>JavaScript</p><p>ReactJS</p></div>
+                    </div>
+                    <div className="hobbies">
+                        <h2>Hobbies</h2>
+                        <div className="skillname"><p>Video Games</p><p>Travelling</p><p>Bike Riding</p></div>
                     </div>
                 </div>
             </div>
