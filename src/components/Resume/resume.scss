@@ -8,11 +8,64 @@ $border: 2px solid;
     background-color: #070B28;
     padding: 2% 5%;
 
+    .myskills{
 
+        h2{
+            font-size: 32px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .skills{
+            
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-gap: 15%;
+            
+            margin-bottom: 30px;
+            margin-left: 10%;
+            margin: 0 0 50px 10%;
+            
+            h4{
+                color: white;
+                font-size: 20px;
+            }
+
+        }
+        .bars{
+            width: 100%;
+            background-color: white;
+            border-radius: 4px;
+        }
+        .progress{
+            height: 8px;
+            background-color: white;
+            
+        }
+        .html{
+            width: 80%;
+            background-color: blue;
+        }
+        .css{
+            width: 75%;
+            background-color: blue;
+        }
+        .js{
+            width: 75%;
+            background-color: blue;
+        }
+        .react{
+            width: 70%;
+            background-color: blue;
+        }
+
+    }
+        
     .work-experience{
         width: 100%;
 
         h2{
+
             color: white;
         }
     }

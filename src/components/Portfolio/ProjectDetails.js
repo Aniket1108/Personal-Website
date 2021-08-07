@@ -1,4 +1,3 @@
-import test from "../../img/test.png"
 import jobportal from "../../img/jobportal.PNG"
 import personalwebsite from "../../img/personalwebsite.png"
 import skillbandlanding from "../../img/skillbandlanding.png"
