@@ -7,7 +7,7 @@ const HeaderPortfolio = () => {
         <div className="headerPortfolio">
             <div className="header">
                 <Link to="/portfolio/projects"><h2>Portfolio</h2></Link>   
-                <Link to="/portfolio/basicprojects"><h3>Basic Project</h3></Link> 
+                {/* <Link to="/portfolio/basicprojects"><h3>Basic Project</h3></Link>  */}
             </div>
         </div>
     )

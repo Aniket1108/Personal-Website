@@ -6,14 +6,12 @@ import aniket from "../../img/aniket.jpeg"
 import { SidebarLink } from './SidebarLink'
 import { Link } from 'react-router-dom'
 
-const Sidebar = ({show},  props) => {
+const Sidebar = ({show}, {setShow},  props) => {
     return (
         <div className={show ? "sidebar active" : "sidebar"} id="Sidebar">
             <div> <img src={aniket} className="profileImg" alt="" width="220px" /> </div>
             <div className="seprator"></div>
-            <div className="allLinks">
-
-
+            <div className="allLinks" >
                 {SidebarLink.map((props, key) => {
                     return (
                         <Link className="links" to={props.link}>
@@ -24,7 +22,6 @@ const Sidebar = ({show},  props) => {
                         </Link>
                     )
                 })}
-
 
             </div>
             <div className="seprator"></div>

@@ -35,8 +35,14 @@ body{
 
 
 }
+@media only screen and (max-width:1000px){
+    .headerPortfolio{
 
-
+        .header h2{
+            font-size: 40px;
+        }
+    }
+}
 /*****************************project *******************************/
 .Project-Portfolio{
     margin-top: 75px;
@@ -116,7 +122,7 @@ body{
 }
 @media only screen and (max-width:1200px){
     .Portfolio{
-        margin: 0 25px;
+        margin: 0;
         width: 100%;
     }    
 }

@@ -6,7 +6,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlineMobile } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { AiFillGithub } from 'react-icons/ai'; 
-import { AiOutlineInstagram } from 'react-icons/ai';
+import { AiOutlineLinkedin } from 'react-icons/ai';
 
 const Contact = () => {
     return (
@@ -26,7 +26,8 @@ const Contact = () => {
                         <i><GoLocation/></i><h4>ADDRESS : <br /> Pen, Maharashtra</h4>
                     </div>
                     <div className="info-cards">
-                        <i><AiFillGithub/></i><i><AiOutlineInstagram/></i>
+                        <a href="https://github.com/Aniket1108" target="_blank"><AiFillGithub/></a>
+                        <a href="https://www.linkedin.com/in/aniket-gholap/" target="_blank"><AiOutlineLinkedin/></a>
                     </div>
                 </div>
                 <div className="form">

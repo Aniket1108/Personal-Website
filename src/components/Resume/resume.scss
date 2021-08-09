@@ -3,15 +3,21 @@ $border: 2px solid;
 #Resume{
     margin-left: 350px;
     min-height: 100vh;
-    max-height: 1000%;
+    max-height: 100%;
     width: 75%;
     background-color: #070B28;
     padding: 2% 5%;
 
+
+    .header{
+        font: 400 52px Poppins;
+        color: white;
+        margin-bottom: 50px;
+    }
     .myskills{
 
         h2{
-            font-size: 32px;
+       
             color: white;
             margin-bottom: 15px;
         }
@@ -134,7 +140,50 @@ $border: 2px solid;
 
 @media only screen and (max-width:1200px){
     #Resume{
-        margin: 0 25px;
+        margin: 0;
         width: 100%;
+    }    
+}
+
+@media only screen and (max-width:760px){
+    #Resume{
+        .header{
+            font-size: 40px;
+        }
+        .myskills{
+            margin-bottom: 125px;
+            
+        }
+        .myskills .skills{
+            display: grid;
+            grid-template-columns: 90%;
+            
+        }
+
+        .work-experience{
+        
+
+            .work{
+                display: flex;
+                flex-direction: column;
+
+                .seperator{
+                    display: none;
+                }
+                .data{
+                    margin-left: 0;
+                    h2{
+                        font-size: 20px;
+                    }
+                    h3{
+                        font-size: 14px;  
+                    }
+                    p{
+                        font-size: 12px}
+                    ;
+                    
+                }
+            }   
+        }
     }    
 }

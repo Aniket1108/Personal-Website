@@ -24,7 +24,7 @@ function App() {
           <div className="toggle-bars"></div>
         </button>
         
-        <Sidebar show={showSidebar}/> 
+        <Sidebar show={showSidebar} /> 
 
 
         <Switch>

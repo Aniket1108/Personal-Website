@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
-import BasicProjectPortfolio from './BasicProjectPortfolio'
+// import BasicProjectPortfolio from './BasicProjectPortfolio'
 import HeaderPortfolio from './HeaderPortfolio'
 import "./portfolio.scss"
 import ProjectPortfolio from './ProjectPortfolio'
@@ -14,7 +14,7 @@ const Portfolio = () => {
                 <Switch>
 
                     <Route path="/portfolio/projects" component={ProjectPortfolio} />
-                    <Route path="/portfolio/basicprojects" component={BasicProjectPortfolio} />
+                    {/* <Route path="/portfolio/basicprojects" component={BasicProjectPortfolio} /> */}
                 
                 </Switch>
             </div>

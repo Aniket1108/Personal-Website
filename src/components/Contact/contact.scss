@@ -36,13 +36,14 @@
         background-color: #0B122E;
         
     
-        i{
+        i, a{
             flex: 20%;
             display: grid;
             place-items: center;
             font-size: 26px;
-
+            color: white;
         }
+        
         h4{
             flex: 80%;
             margin: auto;
@@ -109,6 +110,9 @@
 @media only screen and (max-width:768px) {
     
     .ContactMe{
+        h2{
+            font-size: 40px;
+        }
         .contact{
             display: flex;
             flex-direction: column;
@@ -119,13 +123,7 @@
             width: 90%;
             margin-bottom: 25px;
         }
-    }
-}
 
-
-@media only screen and (max-width:768px) {
-    
-    .ContactMe{
         .info-cards{
             h4{
                 flex: 90%;
@@ -138,3 +136,5 @@
         }
     }
 }
+
+

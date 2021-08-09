@@ -5,7 +5,7 @@ import "./resume.scss"
 const Resume = () => {
     return (
         <div id="Resume">
-
+            <div className="header">Resume</div>
             <div className="myskills">
                 <h2>Skills</h2>
                 <div className="skills">
@@ -60,7 +60,7 @@ const Resume = () => {
                 </div>
             </div>
 
-            <div className="certification">
+            {/* <div className="certification">
                 <h3>
                     Certifications
                 </h3>
@@ -75,7 +75,7 @@ const Resume = () => {
                         <p>Courseara</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             <div className="work-experience">
