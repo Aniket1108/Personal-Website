@@ -1,140 +1,51 @@
-.ContactMe{
-    margin-left: 350px;
-    min-height: 100vh;
-    max-height: 100%;
-    width: 75%;
-    background-color: #070B28;
-    padding: 2% 5%;
-
-    h2{
-        color: white;
-        font: 500 52px Poppins;
+.Contact {
+    .header {
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: #fff;
+        margin: 25px 0;
+        font-weight: 400;
     }
 
-    .contact{
-        display: flex;
-        justify-content: space-between;
-        // border: 2px solid;
-        // height: 85%;
-        padding-top: 10%;
+    .form {
+        margin: 0 auto;
+        width: 800px;
     }
-
-    .info{
-        width: 50%;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // border: 2px solid;
-    }
-    .info-cards{
-        display: flex;
+    .inputfield {
+        margin-bottom: 10px;
         width: 100%;
-        margin: auto;
-        height: 100px;
-        color: white;
-        background-color: #0B122E;
-        
-    
-        i, a{
-            flex: 20%;
-            display: grid;
-            place-items: center;
-            font-size: 26px;
-            color: white;
-        }
-        
-        h4{
-            flex: 80%;
-            margin: auto;
-            font-size: 20px;
-        }
-    
     }
-    .form{
-        width: 45%;
-        height: 500px;
-        // border: 2px solid;
-        background-color: #0B122E;
-        padding: 2% 5%;
-        border-radius: 10px;
 
+    .field {
+        color: #000000;
+        background: #ffffff;
+        border: none;
+        padding: 15px;
+        width: 91.9%;
+        display: block;
+        font-family: "Lato", Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .btn {
+        border: none;
+        color: #191919;
+        padding: 12px 35px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .credit {
+        text-align: center;
+        color: #fff;
         
-        input, textarea{
-            display: flex;
-            flex-direction: column;
+    }
 
-            height: 50px;
-            width: 100%;
-            padding-left: 25px;
-            margin: 10px auto;           
-            
-            background: transparent;
-            outline: none;
-            border: none;
-            border-bottom: 5px solid #070B28;
-            font: 500 20px Poppins;
-            color: white;
-    
-        }
-        .message{
-            height: 40%;
-            margin-top: 25px;
-        }
-    
-        button{
-            float: right;
-            
-            margin-top: 10px;
-            width: 150px;
-            height: 50px;
-            
-            background: transparent;
-
-            border: 5px solid #070B28;
-            border-radius: 50px;
-
-            font: 400 20px Poppins;
-            color: white;
-        }
+    .credit a {
+        color: #0d2ed5;
+        font-weight: bold;
+        text-decoration: none;
     }
 }
-
-@media only screen and (max-width:1200px){
-    .ContactMe{
-        margin: 0;
-        width: 100%;
-    }    
-}
-
-@media only screen and (max-width:768px) {
-    
-    .ContactMe{
-        h2{
-            font-size: 40px;
-        }
-        .contact{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .form, .info{
-            width: 90%;
-            margin-bottom: 25px;
-        }
-
-        .info-cards{
-            h4{
-                flex: 90%;
-                font-size: 15px;
-            }
-            i{
-                flex: 20%;
-                font-size: 18px;
-            }
-        }
-    }
-}
-
-

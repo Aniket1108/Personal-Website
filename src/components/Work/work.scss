@@ -1,0 +1,108 @@
+#Resume {
+    width: 80%;
+    margin: auto;
+
+    .header {
+        font: 400 42px Poppins;
+        color: white;
+        margin-bottom: 25px;
+    }
+    .timeline-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section {
+        display: flex;
+        margin: 2% 0 7% 7%;
+        width: 50%;
+    }
+    .timeline {
+        border-left: 4px solid #0b122e;
+        // background-color: #0B122E;
+        // opacity: 50%;
+    }
+    .work {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100px 50px auto;
+        margin: 15px 0 50px 25px;
+        position: relative;
+
+        .date {
+            margin-top: 3px;
+            font: 400 16px Poppins;
+            color: white;
+            opacity: 50%;
+        }
+
+        .circle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            margin-left: -36.5px;
+            background-color: #070b28;
+
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        .seperator {
+            margin-top: 13px;
+            width: 50px;
+            height: 4px;
+            background-color: #0b122e;
+        }
+        .data {
+            margin-left: 15px;
+            h2 {
+                font: 500 22px Poppins;
+                color: blue;
+            }
+            h3 {
+                font: 400 16px Poppins;
+                color: white;
+            }
+            p {
+                font: 400 14px Poppins;
+                color: white;
+                opacity: 50%;
+            }
+        }
+    }
+    .built {
+        margin-bottom: 100px;
+        .allcard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+            grid-gap: 50px;
+        }
+       
+        .something{
+            border: 2px solid rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .data{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            h2{
+                font-weight: 400;
+            }
+            p{
+                opacity: 0.5;
+            }
+            a{
+                font-size: 2rem;
+                color: #fff;
+                margin-left: 25px;
+                opacity: 0.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.Hero{
+    // height: calc(100vh - 80px);
+    width: 90%;
+    margin: auto;
+    
+
+    .hello{
+        font-size: clamp(110px, 28vw, 280px);
+        font-weight: 700;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 20px;
+        opacity: 0.03;
+        color: #fff;
+        user-select:none;
+        z-index: -2;
+    }
+
+    .info{
+        width: 80%;
+        margin-top: 100px;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        color: #fff;
+
+        h2, h3{
+            font-size: clamp(30px, 8vw, 80px);
+            font-weight: 600;
+        }
+        h3{
+            opacity: 0.4;
+            line-height: clamp(40px, 8vw, 80px);
+        }
+        button{
+            font-size: 1.5rem;
+            padding: 0.4em 1em;
+            margin-top: 25px;
+            background: transparent;
+            border: 2px solid;
+            outline: none;
+            border-radius: 7px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+}

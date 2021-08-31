@@ -1,0 +1,46 @@
+.SocialLinks{
+    position: fixed;
+    left: 25px;
+    top: 65vh;
+    width: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .icon{
+        width: 50px;
+        display: flex;
+        
+        p{
+            position: absolute;
+            margin-left: 70px;
+            opacity: 0;
+            background-color: #fff;
+            padding: 0.2em 0.5em;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        .links{
+            margin: auto;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+    }
+    .icon:hover p{
+        opacity: 1;
+        margin-left: 50px;
+    }
+    .line{
+        width: 2px;
+        height: 150px;
+        background-color: #fff;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .SocialLinks{
+        display: none;
+    }
+}
